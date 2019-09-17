@@ -1,0 +1,15 @@
+usb serial port has to be accesed through putty
+login 
+psswd
+
+echo '31'  // to give output
+read       // for input
+
+cat direvtion INPUT // cat is catehory, and direction of data (Not sure)
+
+// for python write
+python name.py  //(this will upload the python file)
+cat name.py (print content on screen)
+
+ctrl+z // to stop execution
+
