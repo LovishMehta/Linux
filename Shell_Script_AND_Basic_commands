@@ -1,0 +1,33 @@
+"$" stands for => Command Prompt
+
+While the prompt is displayed, you can type a command.
+Shell reads your input after you press Enter. It determines the command you want executed by looking at the first word of your input.
+
+E.g $ date // it will display date
+
+*****************
+Bourne shell
+*****************
+  Bourne shell was the first shell to appear on Unix systems.
+=> Bourne shell is usually installed as /bin/sh on most versions of Unix.
+
+
+***************
+Shell Scripts
+***************
+=> The basic concept of a shell script is a list of commands, which are listed in the order of execution.
+   (similarly to program in C ,as C programs also get executed line by line from begining to end)
+
+=> "#", hash is used to write comments in shell script.
+
+=> Shell scripts are simple text file in which we would put all our commands and several other required constructs that tell 
+   the shell environment what to do and when to do it.
+(NOTE: Shell scripts and functions are both interpreted. This means they are not compiled.)\
+
+ How to write a Shell Script?
+1. Firstly we need to alert the system that a shell script is being started. This is done using the shebang construct (#!/bin/sh)
+   (symbol "#"  stands for "hash" and Symbol "!" stands for "bang" tht's why called "shebang".)
+2. Then we write the data and commands in the script.
+
+(Note: All the scripts would have the .sh extension. Example "test.sh" )
+   
