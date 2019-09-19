@@ -1,0 +1,36 @@
+How to pass argument?
+=> Just write the argument you want to pass after the file name
+   example: ./filename arg1 arg2 arg3
+ 
+ ******************************
+ 1st way to parse arguments
+ ******************************
+=> Whenever you pass an argument it is stored in default variables
+
+Say when you pass 1 argument it is stored in $1
+=> echo $1
+
+=> when you pass three arguments
+  first arguments gets stored in => $1
+  second arguments gets stored in => $2
+  third argument gets stored in => $3
+  
+  NOTE: "0" variable contains the name of script
+ => echo $0  // this will print the script name or we can say file name
+
+****************************************************
+2nd way of parsing arguments i.e parsing as an array
+*****************************************************
+"$@" => stors the arguments as an array. 
+=> So store those arguments in some variable from "$@"
+
+example
+args = ("$@")
+
+echo ${args[0]},${args[1]},${args[2]}
+     OR 
+echo $@   // as all the arguments are stored in this varible by default so it will print all arguments
+
+How to know know the number of arguments or how to print number of arguments ?
+=> echo $#
+"#" is the default is the variable which stores the number of arguments in it.
