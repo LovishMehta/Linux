@@ -1,0 +1,39 @@
+read statement takes input and stores in some varible
+
+=> Single read
+ 
+ read name
+ echo "NAME is : $name"   // echo is similar to println
+ 
+=> Multiple Read
+
+ read name1 name2 name3
+ echo "NAMES : $name1, $name2, $name3"
+
+************************
+Flags for taking input
+************************
+ 
+=>  "-p" flag let us enter the input on same line or we can same prompt
+  
+  read -p 'username :' user_name   // this will take the input on same line
+  echo "Name is : $user_name"
+  
+=> "-s" this will flag lets the system read "silently" i.e. without displaying on the screen
+ 
+   read -sp 'password : ' pass_var
+   echo "password is: $pass_var"
+   
+=> "-a" this flag tells the system to read an "ARRAY"
+
+   read -a names
+   echo "NAmes : ${names[0]}, ${names[1]}"
+   
+ NOTE: if write "read" without any variable then the input goes into built in variable called "REPLY"
+ 
+ Example:
+ 
+ echo "Enter name"
+ read
+ echo "NAmes: $REPLY"
+ 
