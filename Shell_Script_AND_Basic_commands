@@ -17,6 +17,7 @@ Shell Scripts
 ***************
 => The basic concept of a shell script is a list of commands, which are listed in the order of execution.
    (similarly to program in C ,as C programs also get executed line by line from begining to end)
+   (difference is "C" programs are compiled whereas and "Script" programs are interpreted)
 
 => "#", hash is used to write comments in shell script.
 
@@ -30,4 +31,11 @@ Shell Scripts
 2. Then we write the data and commands in the script.
 
 (Note: All the scripts would have the .sh extension. Example "test.sh" )
+
+=> Command to check types of shells available in your system is => cat /etc/shells
+
+Commands:
+1. ls => list all the in current working directory.
+    i) -l option ls command list all the files in current working directory in long listing format.
+       written as => ls -l
    
