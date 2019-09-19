@@ -38,6 +38,9 @@ Commands:
 1. ls => list all the in current working directory.
     i) -l option ls command list all the files in current working directory in long listing format.
        written as => ls -l
+   ii)  -a option to list all the files     
+   iii) ls dirname  //list the files in a directory
+    
 2. echo => used to as printf in c language
        Example => echo "what is your name"
 3. read => used as scanf in c language, used to take the input
@@ -55,14 +58,17 @@ Commands:
     6. init 6 => Reboots the system by shutting it down completely and then restarting it
  
 8. wc => To get a count of the total number of lines, words, and characters contained in a file.
+          Written as => $ wc filename
+          
 9. cat => Command to see the content of a file.
-           Written as => $ wc filename
+           Written as => $ cat /etc/shells   // tells about the type of shells our system has
+           
 10. cp => copy commnad
           written as  => $ cp filename copyfile  (syntax: $ cp source_file destination_file)
           (You will now find one more file copyfile in your current directory. This file will exactly be the same as the
           original file filename.)
 
-11. mv => To change the name of a file
+11. mv => To change the name of a file /  Also can be used to change name of a directory
           syntax : $ mv old_file new_file   (example : $ mv filename newfile)
           (The mv command will move the existing file completely into the new file. In this case, you will find only 
           newfile in your current directory.)
@@ -75,6 +81,35 @@ Commands:
 
 14 cd- =>  To go in your last directory
 
+15 which bash => gives the location where bash is located
+
+16. touch => used to create shell  script
+            written as => touch hello.sh
+ 
+17. pwd =>  the about the current working directory
+
+18. chmod => used to change the access mode of a file.
+           chmod +x filename // gives the permission to the file to "execute"
+    
+    chmod operator and Description
+     1. + => Adds the designated permission(s) to a file or directory. 
+     2. - => Removes the designated permission(s) from a file or directory.
+     3. = => Sets the designated permission(s).
+
+19. mkdir => create directories
+             Example => mkdir dirname  //Creates the directory mydir in the current directory
+                     => mkdir /tmp/test-dir // creates the directory test-dir in the /tmp directory
+                     => mkdir docs pub      // Creates the directories docs and pub under the current directory
+  Sometimes when you want to create a directory, its parent directory or directories might not exist
+  In such cases, you can specify the -p option to the mkdir command.
+             Example => mkdir -p /tmp/amrood/test
+                (above command creates all the required parent directories.)
+
+20. rmdir => Directories can be deleted using the rmdir command 
+             Example => rmdir dirname
+
+21. chown =>  changes the ownership of a file.
+(change owner)  syntax: chown user filelist // Example => chown amrood testfile
 *********************
 Prefix & Description
 *********************
@@ -85,8 +120,54 @@ These characters indicate the type of the file that's listed.
 2. b => Block special file. Block input/output device file such as a physical hard drive.
 3. c => Character special file. Raw input/output device file such as a physical hard drive.
 4. d => Directory file that contains a listing of other files and directories.
-5. I => Symbolic link file. Links on any regular file.
+5. l => Symbolic link file. Links on any regular file.
 6. p => Named pipe. A mechanism for interprocess communications.
 7. s => Socket used for interprocess communication.
+
+*****************
+unix Environment
+*****************
+
+Refer link: https://www.tutorialspoint.com/unix/unix-environment.htm
+
+An important Unix concept is the environment, which is defined by environment variables
+ 
+=> PS1 and PS2 Variables
+The characters that the shell displays as your command prompt are stored in the variable PS1. You can change this variable to be anything you want.
+As soon as you change it, it'll be used by the shell from that point on.
+ example => PS1='=>' (now the command prompt will become this  "=>" instead of "$" )
+ 
+ Variable & Description
+ 1. DISPLAY => Contains the identifier for the display that X11 programs should use by default.
+
+ 2.	HOME => Indicates the home directory of the current user: the default argument for the cd built-in command.
+ 
+ 3.	IFS => Indicates the Internal Field Separator that is used by the parser for word splitting after expansion.
+
+ 4.	LANG => LANG expands to the default system locale; LC_ALL can be used to override this. For example, 
+            if its value is pt_BR, then the language is set to (Brazilian) Portuguese and the locale to Brazil.
+
+ 5.	LD_LIBRARY_PATH => A Unix system with a dynamic linker, contains a colonseparated list of directories that the dynamic linker 
+                should search for shared objects when building a process image after exec, before searching in any other directories.
+
+ 6. PATH => Indicates the search path for commands. It is a colon-separated list of directories in which the shell looks for commands.
+ 
+ 7.	PWD => Indicates the current working directory as set by the cd command.
+
+ 8.	RANDOM => Generates a random integer between 0 and 32,767 each time it is referenced.
+
+ 9.	SHLVL => Increments by one each time an instance of bash is started. This variable is useful for determining whether the
+             built-in exit command ends the current session.
+
+ 10. TERM => Refers to the display type.
+
+11. TZ => Refers to Time zone. It can take values like GMT, AST, etc.
+
+12 UID => Expands to the numeric user ID of the current user, initialized at the shell startup.
+
+
+    
+
+
 
 
