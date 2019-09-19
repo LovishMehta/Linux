@@ -1,3 +1,5 @@
+Refer this Link : https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/
+
 How to pass argument?
 => Just write the argument you want to pass after the file name
    example: ./filename arg1 arg2 arg3
