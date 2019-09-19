@@ -1,0 +1,32 @@
+Link: https://www.tutorialspoint.com/unix/unix-basic-operators.htm
+
+Different operators in sripting language
+=>Arithmetic Operators
+=>Relational Operators
+=>Boolean Operators
+=>String Operators
+=>File Test Operators
+=>Check the above link for details
+
+=> block special file is a special file which contains binary, picture, video
+=> character file is a file which contains text, data .
+
+************************
+Test operatores Examples
+************************
+=>  [ -e $file_name]  //Checks if file exists; is true even if file is a directory but exists.
+=>  [ -f $file ]  // Checks if file is an ordinary file as opposed to a directory or special file; if yes, then the condition becomes true.
+=>  [ -d $file_name] // checks whether directory exists or not 
+=>  [-b $file_name] // Checks if file is a block special file; if yes, then the condition becomes true.
+so on....... check the link for more
+
+#! /bin/bash
+
+read file_name
+
+if[ -e $file_name]   
+ then
+ echo "file found"
+ else
+ echo "file found"
+ fi
