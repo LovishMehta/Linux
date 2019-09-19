@@ -1,0 +1,84 @@
+Conditional statements
+
+conditions same as C => ==, !=, >= ,<=, > , <
+ -z => string is null, that is it has zero length
+*********************
+IF conditon syntax: 
+********************
+    if[ condition ]
+    then
+     statement
+    fi
+********************  
+    
+ 
+ example:
+ => To check for integer
+ count = 10
+ if[$count == 10]
+  then 
+   echo "condition is true"
+ fi
+ 
+ => To check for string
+ NOTE: whenever you use greater than > and and smaller than < , we use duble square brackets [[ ]]. fo other conditions its same
+
+=> count = b
+  if[[count > "a"]]
+  then 
+   echo "Condition is true"
+  fi
+ 
+=> count = abc
+  if[count == "abc"]
+  then 
+   echo "Condition is true"
+  fi
+ 
+*************************
+IF else conditon syntax: 
+*************************
+    if[ condition ]
+    then
+     statement
+    else
+     statement
+    fi
+************************* 
+
+Example:
+=> count = b
+  if[[count > "a"]]
+  then 
+   echo "Condition is true"
+  else
+   echo "condition is not true"
+  fi
+  
+ ***************************
+ If-elif-else Statement
+ ***************************
+ 
+ Example :
+
+#!/bin/bash
+ 
+read -p "Enter your marks: " marks
+ 
+if [ $marks -ge 80 ]
+then
+    echo "Very Good"
+ 
+elif [ $marks -ge 50 ]
+then
+    echo "Good"
+ 
+elif [ $marks -ge 33 ]
+then
+    echo "Just Satisfactory"
+else
+    echo "Not OK"
+fi
+ 
+ 
+ 
