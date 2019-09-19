@@ -38,4 +38,55 @@ Commands:
 1. ls => list all the in current working directory.
     i) -l option ls command list all the files in current working directory in long listing format.
        written as => ls -l
-   
+2. echo => used to as printf in c language
+       Example => echo "what is your name"
+3. read => used as scanf in c language, used to take the input
+       Example => read PERSON // takes input and store in person variable
+4. whoami => This command lists the account name associated with the current login
+5. w      => This lists down information associated with the users logged in the system. 
+6. logout => the system will clean up everything and break the connection.
+7. System Shutdown commands
+    1. halt => Brings the system down immediately
+    2. poweroff => Shuts down the system by powering off
+    3. reboot => Reboots the system
+    4. shutdown => Shuts down the system
+    5. init 0 => Powers off the system using predefined scripts to synchronize and clean up 
+                 the system prior to shutting down
+    6. init 6 => Reboots the system by shutting it down completely and then restarting it
+ 
+8. wc => To get a count of the total number of lines, words, and characters contained in a file.
+9. cat => Command to see the content of a file.
+           Written as => $ wc filename
+10. cp => copy commnad
+          written as  => $ cp filename copyfile  (syntax: $ cp source_file destination_file)
+          (You will now find one more file copyfile in your current directory. This file will exactly be the same as the
+          original file filename.)
+
+11. mv => To change the name of a file
+          syntax : $ mv old_file new_file   (example : $ mv filename newfile)
+          (The mv command will move the existing file completely into the new file. In this case, you will find only 
+          newfile in your current directory.)
+          
+12. rm => (remove) To delete an existing file
+           syntax : rm filename
+           
+13. cd ~ => You can go in your home directory anytime using this command
+    (here ~ indicates the home directory => cd ~username)
+
+14 cd- =>  To go in your last directory
+
+*********************
+Prefix & Description
+*********************
+In the ls -l listing example, every file line begins with a d, -, or l. 
+These characters indicate the type of the file that's listed.
+
+1. - => Regular file, such as an ASCII text file, binary executable, or hard link.
+2. b => Block special file. Block input/output device file such as a physical hard drive.
+3. c => Character special file. Raw input/output device file such as a physical hard drive.
+4. d => Directory file that contains a listing of other files and directories.
+5. I => Symbolic link file. Links on any regular file.
+6. p => Named pipe. A mechanism for interprocess communications.
+7. s => Socket used for interprocess communication.
+
+
