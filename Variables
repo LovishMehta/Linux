@@ -1,0 +1,20 @@
+There are two types of variables
+1. System Varibles : Most likely these variables are defined in capital letters
+   Example : 
+    1. BASH => gives the name of shell
+    2. BASH_VERSION => gives version of the bash
+    3. HOME => this will give home directory
+    4. PWD => this gives the present working directory in which you are working.
+    etc.
+    
+2. User defined variables : these are generally created using lower case, can also be in upper case
+ 
+   the variable name is same as it used to be in c, the rukes for giving variable name are same as C.
+   Example => name. student , book etc
+    use => read name // value get stored in name
+    
+   To print use $ symbol before variable name
+    Example => echo "The name is $name"
+    
+  To write comment use symbol "#"
+
